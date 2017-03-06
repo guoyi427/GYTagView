@@ -10,6 +10,8 @@
 		5DAC40D01E6D4A3D001B35B6 /* GYTagView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAC40C61E6D4A3D001B35B6 /* GYTagView.framework */; };
 		5DAC40D51E6D4A3D001B35B6 /* GYTagViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC40D41E6D4A3D001B35B6 /* GYTagViewTests.swift */; };
 		5DAC40D71E6D4A3D001B35B6 /* GYTagView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAC40C91E6D4A3D001B35B6 /* GYTagView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DAC40E11E6D507C001B35B6 /* GYTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC40E01E6D507C001B35B6 /* GYTagView.swift */; };
+		5DAC40E21E6D5C58001B35B6 /* GYTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC40E01E6D507C001B35B6 /* GYTagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		5DAC40CF1E6D4A3D001B35B6 /* GYTagViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYTagViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAC40D41E6D4A3D001B35B6 /* GYTagViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYTagViewTests.swift; sourceTree = "<group>"; };
 		5DAC40D61E6D4A3D001B35B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DAC40E01E6D507C001B35B6 /* GYTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTagView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				5DAC40C91E6D4A3D001B35B6 /* GYTagView.h */,
+				5DAC40E01E6D507C001B35B6 /* GYTagView.swift */,
 				5DAC40CA1E6D4A3D001B35B6 /* Info.plist */,
 			);
 			path = GYTagView;
@@ -149,6 +153,7 @@
 					5DAC40C51E6D4A3D001B35B6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = QEJW2BZ99E;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5DAC40CE1E6D4A3D001B35B6 = {
@@ -198,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DAC40E11E6D507C001B35B6 /* GYTagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DAC40D51E6D4A3D001B35B6 /* GYTagViewTests.swift in Sources */,
+				5DAC40E21E6D5C58001B35B6 /* GYTagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +329,7 @@
 		5DAC40DB1E6D4A3D001B35B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QEJW2BZ99E;
@@ -334,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.guoyi.GYTagView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +350,7 @@
 		5DAC40DC1E6D4A3D001B35B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QEJW2BZ99E;
@@ -360,6 +370,7 @@
 		5DAC40DE1E6D4A3D001B35B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QEJW2BZ99E;
 				INFOPLIST_FILE = GYTagViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +383,7 @@
 		5DAC40DF1E6D4A3D001B35B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QEJW2BZ99E;
 				INFOPLIST_FILE = GYTagViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +412,7 @@
 				5DAC40DC1E6D4A3D001B35B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DAC40DD1E6D4A3D001B35B6 /* Build configuration list for PBXNativeTarget "GYTagViewTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +421,7 @@
 				5DAC40DF1E6D4A3D001B35B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

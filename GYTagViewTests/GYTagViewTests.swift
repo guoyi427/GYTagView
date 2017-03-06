@@ -24,6 +24,10 @@ class GYTagViewTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let frame = CGRect(x: 0, y: 200, width: 375, height: 300)
+        let tags = ["罗卡就离开的肌肤", "罗卡就离", "罗卡就离开的肌是大丰收肤", "罗的肌肤", "罗卡就的肌肤", "罗卡就离开", "罗卡就离开大发的说法地方的肌肤", "罗卡就的肌肤", "罗卡就离开的肌肤"]
+        let tagView = GYTagView(frame: frame, tags: tags)
+        
     }
     
     func testPerformanceExample() {
