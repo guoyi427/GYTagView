@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DB34A3D1E6EAE6C00C7301C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB34A3C1E6EAE6C00C7301C /* AppDelegate.swift */; };
+		5DB34A3F1E6EAE6C00C7301C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB34A3E1E6EAE6C00C7301C /* ViewController.swift */; };
+		5DB34A421E6EAE6C00C7301C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB34A401E6EAE6C00C7301C /* Main.storyboard */; };
+		5DB34A441E6EAE6C00C7301C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB34A431E6EAE6C00C7301C /* Assets.xcassets */; };
+		5DB34A471E6EAE6C00C7301C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB34A451E6EAE6C00C7301C /* LaunchScreen.storyboard */; };
+		5DB34A521E6EAE6C00C7301C /* GYTagViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB34A511E6EAE6C00C7301C /* GYTagViewExampleTests.swift */; };
+		5DB34A5D1E6EAE6C00C7301C /* GYTagViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB34A5C1E6EAE6C00C7301C /* GYTagViewExampleUITests.swift */; };
+		5DB34A6C1E6EAE7E00C7301C /* GYTagViewSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB34A6A1E6EAE7600C7301C /* GYTagViewSDK.framework */; };
+		5DB34A6D1E6EAE7E00C7301C /* GYTagViewSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB34A6A1E6EAE7600C7301C /* GYTagViewSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DB34A4E1E6EAE6C00C7301C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DB34A311E6EAE6C00C7301C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DB34A381E6EAE6C00C7301C;
+			remoteInfo = GYTagViewExample;
+		};
+		5DB34A591E6EAE6C00C7301C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DB34A311E6EAE6C00C7301C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DB34A381E6EAE6C00C7301C;
+			remoteInfo = GYTagViewExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DB34A6E1E6EAE7E00C7301C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DB34A6D1E6EAE7E00C7301C /* GYTagViewSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5DB34A391E6EAE6C00C7301C /* GYTagViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYTagViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB34A3C1E6EAE6C00C7301C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DB34A3E1E6EAE6C00C7301C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DB34A411E6EAE6C00C7301C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DB34A431E6EAE6C00C7301C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DB34A461E6EAE6C00C7301C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DB34A481E6EAE6C00C7301C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB34A4D1E6EAE6C00C7301C /* GYTagViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYTagViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB34A511E6EAE6C00C7301C /* GYTagViewExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYTagViewExampleTests.swift; sourceTree = "<group>"; };
+		5DB34A531E6EAE6C00C7301C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB34A581E6EAE6C00C7301C /* GYTagViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYTagViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB34A5C1E6EAE6C00C7301C /* GYTagViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYTagViewExampleUITests.swift; sourceTree = "<group>"; };
+		5DB34A5E1E6EAE6C00C7301C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB34A6A1E6EAE7600C7301C /* GYTagViewSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GYTagViewSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DB34A361E6EAE6C00C7301C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB34A6C1E6EAE7E00C7301C /* GYTagViewSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB34A4A1E6EAE6C00C7301C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB34A551E6EAE6C00C7301C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DB34A301E6EAE6C00C7301C = {
+			isa = PBXGroup;
+			children = (
+				5DB34A6A1E6EAE7600C7301C /* GYTagViewSDK.framework */,
+				5DB34A3B1E6EAE6C00C7301C /* GYTagViewExample */,
+				5DB34A501E6EAE6C00C7301C /* GYTagViewExampleTests */,
+				5DB34A5B1E6EAE6C00C7301C /* GYTagViewExampleUITests */,
+				5DB34A3A1E6EAE6C00C7301C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DB34A3A1E6EAE6C00C7301C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DB34A391E6EAE6C00C7301C /* GYTagViewExample.app */,
+				5DB34A4D1E6EAE6C00C7301C /* GYTagViewExampleTests.xctest */,
+				5DB34A581E6EAE6C00C7301C /* GYTagViewExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DB34A3B1E6EAE6C00C7301C /* GYTagViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				5DB34A3C1E6EAE6C00C7301C /* AppDelegate.swift */,
+				5DB34A3E1E6EAE6C00C7301C /* ViewController.swift */,
+				5DB34A401E6EAE6C00C7301C /* Main.storyboard */,
+				5DB34A431E6EAE6C00C7301C /* Assets.xcassets */,
+				5DB34A451E6EAE6C00C7301C /* LaunchScreen.storyboard */,
+				5DB34A481E6EAE6C00C7301C /* Info.plist */,
+			);
+			path = GYTagViewExample;
+			sourceTree = "<group>";
+		};
+		5DB34A501E6EAE6C00C7301C /* GYTagViewExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DB34A511E6EAE6C00C7301C /* GYTagViewExampleTests.swift */,
+				5DB34A531E6EAE6C00C7301C /* Info.plist */,
+			);
+			path = GYTagViewExampleTests;
+			sourceTree = "<group>";
+		};
+		5DB34A5B1E6EAE6C00C7301C /* GYTagViewExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DB34A5C1E6EAE6C00C7301C /* GYTagViewExampleUITests.swift */,
+				5DB34A5E1E6EAE6C00C7301C /* Info.plist */,
+			);
+			path = GYTagViewExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DB34A381E6EAE6C00C7301C /* GYTagViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DB34A611E6EAE6C00C7301C /* Build configuration list for PBXNativeTarget "GYTagViewExample" */;
+			buildPhases = (
+				5DB34A351E6EAE6C00C7301C /* Sources */,
+				5DB34A361E6EAE6C00C7301C /* Frameworks */,
+				5DB34A371E6EAE6C00C7301C /* Resources */,
+				5DB34A6E1E6EAE7E00C7301C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GYTagViewExample;
+			productName = GYTagViewExample;
+			productReference = 5DB34A391E6EAE6C00C7301C /* GYTagViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DB34A4C1E6EAE6C00C7301C /* GYTagViewExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DB34A641E6EAE6C00C7301C /* Build configuration list for PBXNativeTarget "GYTagViewExampleTests" */;
+			buildPhases = (
+				5DB34A491E6EAE6C00C7301C /* Sources */,
+				5DB34A4A1E6EAE6C00C7301C /* Frameworks */,
+				5DB34A4B1E6EAE6C00C7301C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DB34A4F1E6EAE6C00C7301C /* PBXTargetDependency */,
+			);
+			name = GYTagViewExampleTests;
+			productName = GYTagViewExampleTests;
+			productReference = 5DB34A4D1E6EAE6C00C7301C /* GYTagViewExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DB34A571E6EAE6C00C7301C /* GYTagViewExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DB34A671E6EAE6C00C7301C /* Build configuration list for PBXNativeTarget "GYTagViewExampleUITests" */;
+			buildPhases = (
+				5DB34A541E6EAE6C00C7301C /* Sources */,
+				5DB34A551E6EAE6C00C7301C /* Frameworks */,
+				5DB34A561E6EAE6C00C7301C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DB34A5A1E6EAE6C00C7301C /* PBXTargetDependency */,
+			);
+			name = GYTagViewExampleUITests;
+			productName = GYTagViewExampleUITests;
+			productReference = 5DB34A581E6EAE6C00C7301C /* GYTagViewExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DB34A311E6EAE6C00C7301C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = guoyi;
+				TargetAttributes = {
+					5DB34A381E6EAE6C00C7301C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QEJW2BZ99E;
+						ProvisioningStyle = Automatic;
+					};
+					5DB34A4C1E6EAE6C00C7301C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QEJW2BZ99E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5DB34A381E6EAE6C00C7301C;
+					};
+					5DB34A571E6EAE6C00C7301C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QEJW2BZ99E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5DB34A381E6EAE6C00C7301C;
+					};
+				};
+			};
+			buildConfigurationList = 5DB34A341E6EAE6C00C7301C /* Build configuration list for PBXProject "GYTagViewExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DB34A301E6EAE6C00C7301C;
+			productRefGroup = 5DB34A3A1E6EAE6C00C7301C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DB34A381E6EAE6C00C7301C /* GYTagViewExample */,
+				5DB34A4C1E6EAE6C00C7301C /* GYTagViewExampleTests */,
+				5DB34A571E6EAE6C00C7301C /* GYTagViewExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DB34A371E6EAE6C00C7301C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB34A471E6EAE6C00C7301C /* LaunchScreen.storyboard in Resources */,
+				5DB34A441E6EAE6C00C7301C /* Assets.xcassets in Resources */,
+				5DB34A421E6EAE6C00C7301C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB34A4B1E6EAE6C00C7301C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB34A561E6EAE6C00C7301C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DB34A351E6EAE6C00C7301C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB34A3F1E6EAE6C00C7301C /* ViewController.swift in Sources */,
+				5DB34A3D1E6EAE6C00C7301C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB34A491E6EAE6C00C7301C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB34A521E6EAE6C00C7301C /* GYTagViewExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DB34A541E6EAE6C00C7301C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB34A5D1E6EAE6C00C7301C /* GYTagViewExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DB34A4F1E6EAE6C00C7301C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DB34A381E6EAE6C00C7301C /* GYTagViewExample */;
+			targetProxy = 5DB34A4E1E6EAE6C00C7301C /* PBXContainerItemProxy */;
+		};
+		5DB34A5A1E6EAE6C00C7301C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DB34A381E6EAE6C00C7301C /* GYTagViewExample */;
+			targetProxy = 5DB34A591E6EAE6C00C7301C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DB34A401E6EAE6C00C7301C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DB34A411E6EAE6C00C7301C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DB34A451E6EAE6C00C7301C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DB34A461E6EAE6C00C7301C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DB34A5F1E6EAE6C00C7301C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DB34A601E6EAE6C00C7301C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DB34A621E6EAE6C00C7301C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QEJW2BZ99E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GYTagViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoyi.GYTagViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5DB34A631E6EAE6C00C7301C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QEJW2BZ99E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GYTagViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoyi.GYTagViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5DB34A651E6EAE6C00C7301C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QEJW2BZ99E;
+				INFOPLIST_FILE = GYTagViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoyi.GYTagViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYTagViewExample.app/GYTagViewExample";
+			};
+			name = Debug;
+		};
+		5DB34A661E6EAE6C00C7301C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QEJW2BZ99E;
+				INFOPLIST_FILE = GYTagViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoyi.GYTagViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYTagViewExample.app/GYTagViewExample";
+			};
+			name = Release;
+		};
+		5DB34A681E6EAE6C00C7301C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QEJW2BZ99E;
+				INFOPLIST_FILE = GYTagViewExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoyi.GYTagViewExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GYTagViewExample;
+			};
+			name = Debug;
+		};
+		5DB34A691E6EAE6C00C7301C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QEJW2BZ99E;
+				INFOPLIST_FILE = GYTagViewExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guoyi.GYTagViewExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GYTagViewExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DB34A341E6EAE6C00C7301C /* Build configuration list for PBXProject "GYTagViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB34A5F1E6EAE6C00C7301C /* Debug */,
+				5DB34A601E6EAE6C00C7301C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DB34A611E6EAE6C00C7301C /* Build configuration list for PBXNativeTarget "GYTagViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB34A621E6EAE6C00C7301C /* Debug */,
+				5DB34A631E6EAE6C00C7301C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5DB34A641E6EAE6C00C7301C /* Build configuration list for PBXNativeTarget "GYTagViewExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB34A651E6EAE6C00C7301C /* Debug */,
+				5DB34A661E6EAE6C00C7301C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5DB34A671E6EAE6C00C7301C /* Build configuration list for PBXNativeTarget "GYTagViewExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DB34A681E6EAE6C00C7301C /* Debug */,
+				5DB34A691E6EAE6C00C7301C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DB34A311E6EAE6C00C7301C /* Project object */;
+}

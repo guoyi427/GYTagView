@@ -1,32 +1,38 @@
 //
 //  GYTagView.swift
-//  GYTagView
+//  GYTagViewSDK
 //
-//  Created by kokozu on 2017/3/6.
+//  Created by kokozu on 2017/3/7.
 //  Copyright © 2017年 guoyi. All rights reserved.
 //
 
 import UIKit
 
-class GYTagView: UIView {
+public class GYTagView: UIView {
+    
     
     /// 标签数组
     fileprivate var _tags:[String]
     /// 标签字体大小
     fileprivate let _tagFont = UIFont.systemFont(ofSize: 15)
+    /// 保存所有标签视图
+    fileprivate var _tagViews:[UIButton] = []
     
-    init(frame:CGRect, tags:[String]) {
+    public init(frame:CGRect, tags:[String]) {
         _tags = tags
         super.init(frame: frame)
         updateUI(tags: tags)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     //MARK: Prepare
-    func updateUI(tags:[String]) {
+    public func updateUI(tags:[String]) {
+        //  清理
+        clearTagViews()
+        
         _tags = tags
         
         //  根据 _tags 计算所有frames
@@ -50,7 +56,16 @@ class GYTagView: UIView {
             tagButton.layer.cornerRadius = 3
             tagButton.addTarget(self, action: #selector(tagButtonAction), for: .touchUpInside)
             self.addSubview(tagButton)
+            _tagViews.append(tagButton)
         }
+    }
+    
+    /// 清空全部标签视图
+    fileprivate func clearTagViews() {
+        for tagBtn in _tagViews {
+            tagBtn.removeFromSuperview()
+        }
+        _tagViews.removeAll()
     }
     
     /// 计算frame
@@ -62,7 +77,6 @@ class GYTagView: UIView {
         /// options
         let options: NSStringDrawingOptions = [.usesLineFragmentOrigin,.usesFontLeading]
         /// attributes
-//        let tagFont = UIFont.systemFont(ofSize: 15)
         let attributes: [String: Any] = [NSFontAttributeName: _tagFont]
         
         
@@ -79,6 +93,10 @@ class GYTagView: UIView {
         
         for tag in _tags {
             var tagFrame = (tag as NSString).boundingRect(with: tagMaxSize, options: options, attributes: attributes, context: nil)
+            //  让标签内文字宽松10像素
+            tagFrame.size.width += 10
+            tagFrame.size.height += 10
+            
             //  判断是否需要换行
             if self.frame.width - lastTagFrame.maxX < tagFrame.width + padding_horizontal {
                 //  如果 上一个标签与右侧边框空隙 小于 当前标签的宽度 + 水平缝隙  就需要换行

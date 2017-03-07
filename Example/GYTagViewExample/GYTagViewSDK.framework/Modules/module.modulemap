@@ -1,0 +1,10 @@
+framework module GYTagViewSDK {
+  umbrella header "GYTagViewSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module GYTagViewSDK.Swift {
+    header "GYTagViewSDK-Swift.h"
+}
