@@ -17,6 +17,10 @@ public class GYTagView: UIView {
     fileprivate let _tagFont = UIFont.systemFont(ofSize: 15)
     /// 保存所有标签视图
     fileprivate var _tagViews:[UIButton] = []
+    /// 保存所有标签的frame
+    fileprivate var _frames:[CGRect] = []
+    /// tagButton index
+    fileprivate let _Index_tagButton = 200
     
     public init(frame:CGRect, tags:[String]) {
         _tags = tags
@@ -36,14 +40,14 @@ public class GYTagView: UIView {
         _tags = tags
         
         //  根据 _tags 计算所有frames
-        let frames:[CGRect] = calculateFrame()
+        _frames = calculateFrame()
         
         //  创建 tag
         for index in 0..._tags.count-1 {
             let tagButton = UIButton(type: .custom)
             var tagFrame: CGRect = CGRect()
-            if frames.count > index {
-                tagFrame = frames[index]
+            if _frames.count > index {
+                tagFrame = _frames[index]
             }
             tagButton.frame = tagFrame
             tagButton.setTitle(_tags[index], for: .normal)
@@ -54,7 +58,8 @@ public class GYTagView: UIView {
             tagButton.layer.borderWidth = 1
             tagButton.layer.masksToBounds = true
             tagButton.layer.cornerRadius = 3
-            tagButton.addTarget(self, action: #selector(tagButtonAction), for: .touchUpInside)
+            tagButton.tag = _Index_tagButton + index
+            tagButton.addTarget(self, action: #selector(tagButtonAction(button:)), for: .touchUpInside)
             self.addSubview(tagButton)
             _tagViews.append(tagButton)
         }
@@ -113,13 +118,33 @@ public class GYTagView: UIView {
             frames.append(tagFrame)
         }
         
-        
         return frames
     }
     
     //MARK: Button Action
-    @objc fileprivate func tagButtonAction() {
+    @objc fileprivate func tagButtonAction(button: UIButton) {
+        /// button 下标
+        let index = button.tag - _Index_tagButton
+        /// 删除点击tag
+        if _tags.count > index && _tagViews.count > index {
+            _tags.remove(at: index)
+            _tagViews.remove(at: index)
+            button.removeFromSuperview()
+        }
         
+        //  更新frame
+        self._frames.removeAll()
+        self._frames = calculateFrame()
+        
+        /// 更新frame动画
+        UIView.animate(withDuration: 0.25) {
+            let count = self._tagViews.count - 1
+            for index in 0...count {
+                let tagView = self._tagViews[index]
+                tagView.tag = self._Index_tagButton + index
+                let frame = self._frames[index]
+                tagView.frame = frame
+            }
+        }
     }
-    
 }

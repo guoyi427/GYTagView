@@ -14,8 +14,8 @@
 		5DB34A471E6EAE6C00C7301C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB34A451E6EAE6C00C7301C /* LaunchScreen.storyboard */; };
 		5DB34A521E6EAE6C00C7301C /* GYTagViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB34A511E6EAE6C00C7301C /* GYTagViewExampleTests.swift */; };
 		5DB34A5D1E6EAE6C00C7301C /* GYTagViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB34A5C1E6EAE6C00C7301C /* GYTagViewExampleUITests.swift */; };
-		5DB34A6C1E6EAE7E00C7301C /* GYTagViewSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB34A6A1E6EAE7600C7301C /* GYTagViewSDK.framework */; };
-		5DB34A6D1E6EAE7E00C7301C /* GYTagViewSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB34A6A1E6EAE7600C7301C /* GYTagViewSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DF2D1D01E6EB802007970C5 /* GYTagViewSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB34A731E6EB79800C7301C /* GYTagViewSDK.framework */; };
+		5DF2D1D11E6EB802007970C5 /* GYTagViewSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB34A731E6EB79800C7301C /* GYTagViewSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5DB34A6D1E6EAE7E00C7301C /* GYTagViewSDK.framework in Embed Frameworks */,
+				5DF2D1D11E6EB802007970C5 /* GYTagViewSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 		5DB34A581E6EAE6C00C7301C /* GYTagViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYTagViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB34A5C1E6EAE6C00C7301C /* GYTagViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYTagViewExampleUITests.swift; sourceTree = "<group>"; };
 		5DB34A5E1E6EAE6C00C7301C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DB34A6A1E6EAE7600C7301C /* GYTagViewSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GYTagViewSDK.framework; sourceTree = "<group>"; };
+		5DB34A731E6EB79800C7301C /* GYTagViewSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GYTagViewSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DB34A6C1E6EAE7E00C7301C /* GYTagViewSDK.framework in Frameworks */,
+				5DF2D1D01E6EB802007970C5 /* GYTagViewSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 		5DB34A301E6EAE6C00C7301C = {
 			isa = PBXGroup;
 			children = (
-				5DB34A6A1E6EAE7600C7301C /* GYTagViewSDK.framework */,
+				5DB34A731E6EB79800C7301C /* GYTagViewSDK.framework */,
 				5DB34A3B1E6EAE6C00C7301C /* GYTagViewExample */,
 				5DB34A501E6EAE6C00C7301C /* GYTagViewExampleTests */,
 				5DB34A5B1E6EAE6C00C7301C /* GYTagViewExampleUITests */,
@@ -540,6 +540,7 @@
 				5DB34A631E6EAE6C00C7301C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DB34A641E6EAE6C00C7301C /* Build configuration list for PBXNativeTarget "GYTagViewExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +549,7 @@
 				5DB34A661E6EAE6C00C7301C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DB34A671E6EAE6C00C7301C /* Build configuration list for PBXNativeTarget "GYTagViewExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +558,7 @@
 				5DB34A691E6EAE6C00C7301C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

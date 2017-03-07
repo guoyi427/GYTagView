@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		M7B6dwEs6Evda1v4gXOodz1nPBw=
+		</data>
 		<key>Headers/GYTagViewSDK-Swift.h</key>
 		<data>
 		zm4qk67sakeEXuc3WcJnF2RjS3U=
@@ -16,13 +20,17 @@
 		<data>
 		KbXkWQLHXHN9fWPH2mApu8M8lew=
 		</data>
+		<key>Modules/.DS_Store</key>
+		<data>
+		EBt0vPn2RlrnoyB1nxzsDZRI4F4=
+		</data>
 		<key>Modules/GYTagViewSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
 		MCqDP9dFgRU/DU3LjZ6qeDZwPUM=
 		</data>
 		<key>Modules/GYTagViewSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		+pvBGm5+gjwB9f4n/2ezvj+aD34=
+		8bl6lUMzvYXm4mkVzuMEoybVFHs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+pvBGm5+gjwB9f4n/2ezvj+aD34=
+			8bl6lUMzvYXm4mkVzuMEoybVFHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			s5fd+spc0tQsffCPQL6EHj0iyiTsRZIBf0InUPflNEQ=
+			ueu6xV9SFolZNsmmHpNi/2isR9FLzIfxlMtbIH61oKA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
